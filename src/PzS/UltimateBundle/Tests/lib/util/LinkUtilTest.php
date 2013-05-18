@@ -22,7 +22,8 @@
  * @copyright	2011-2012 Jim Martens
  * @license		http://www.gnu.org/licenses/lgpl-3.0 GNU Lesser General Public License, version 3
  */
-namespace ultimate\util;
+namespace PzS\UltimateBundle\Tests\lib\util;
+use ultimate\util\LinkUtil;
 
 // define('CONFIG_FILE_PATH', dirname(dirname(dirname(dirname(__FILE__)))).'/');
 // require_once(CONFIG_FILE_PATH.'config.inc.php');

@@ -23,10 +23,8 @@
  * @license		http://www.gnu.org/licenses/lgpl-3.0 GNU Lesser General Public License, version 3
  * @package		de.plugins-zum-selberbauen.ultimate
  */
-namespace ultimate\data\category;
-use ultimate\tests\AbstractUltimateTestCase;
-
-require_once(__DIR__.'/../../../../AbstractUltimateTestCase.class.php');
+namespace PzS\UltimateBundle\Tests\lib\data\category;
+use ultimate\data\category\CategoryEditor;
 
 /**
  * Tests the CategoryEditor class.
@@ -36,7 +34,7 @@ require_once(__DIR__.'/../../../../AbstractUltimateTestCase.class.php');
  * @license		http://www.gnu.org/licenses/lgpl-3.0 GNU Lesser General Public License, version 3
  * @package		de.plugins-zum-selberbauen.ultimate
  */
-class CategoryEditorTest extends AbstractUltimateTestCase {
+class CategoryEditorTest extends \PHPUnit_Framework_TestCase {
 	/**
 	 * @covers ultimate\data\category\CategoryEditor::create
 	 */
