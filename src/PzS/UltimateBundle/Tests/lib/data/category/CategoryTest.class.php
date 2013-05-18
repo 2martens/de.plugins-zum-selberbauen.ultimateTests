@@ -23,11 +23,8 @@
  * @license		http://www.gnu.org/licenses/lgpl-3.0 GNU Lesser General Public License, version 3
  * @package		de.plugins-zum-selberbauen.ultimate
  */
-namespace ultimate\data\category;
-use ultimate\data\content\Content;
-use ultimate\tests\AbstractUltimateTestCase;
-
-require_once(__DIR__.'/../../../../AbstractUltimateTestCase.class.php');
+namespace PzS\UltimateBundle\Tests\lib\data\category;
+use ultimate\data\category\Category;
 
 /**
  * Tests the Category class.
@@ -37,7 +34,7 @@ require_once(__DIR__.'/../../../../AbstractUltimateTestCase.class.php');
  * @license		http://www.gnu.org/licenses/lgpl-3.0 GNU Lesser General Public License, version 3
  * @package		de.plugins-zum-selberbauen.ultimate
  */
-class CategoryTest extends AbstractUltimateTestCase {
+class CategoryTest extends \PHPUnit_Framework_TestCase {
 	/**
 	 * @covers ultimate\data\category\Category::getTitle
 	 */
