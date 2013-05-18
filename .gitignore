@@ -4,7 +4,9 @@
 /app/logs/*
 /vendor/
 /app/config/parameters.yml
-/app/config/config*
+/app/config/config_dev.yml
+/app/config/config_prod.yml
+/app/config/config_test.yml
 
 # Linux
 # backup files
