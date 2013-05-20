@@ -22,7 +22,7 @@
  * @copyright	2011-2012 Jim Martens
  * @license		http://www.gnu.org/licenses/lgpl-3.0 GNU Lesser General Public License, version 3
  */
-namespace PzS\UltimateBundle\Tests\lib\util;
+namespace PzS\UltimateBundle\Tests\unit\lib\util;
 use ultimate\util\LinkUtil;
 
 /**
