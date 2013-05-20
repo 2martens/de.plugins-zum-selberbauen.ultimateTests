@@ -171,14 +171,14 @@ class CategoryRepositoryFunctionalTest extends WebTestCase
 		$actualCategory->setCategorySlug('test');
 		$actualCategory->setCategoryDescription('testDescription');
 		$this->em->persist($actualCategory);
-		$this->em->flush();
+		$this->em->flush($actualCategory);
 		$this->em->refresh($actualCategory);
 		
 		$layout = new LayoutEntity();
 		$layout->setObjectID($actualCategory->getId());
 		$layout->setObjectType('category');
 		$this->em->persist($layout);
-		$this->em->flush();
+		$this->em->flush($layout);
 		$this->em->refresh($layout);
 		
 		// reset WCF cache, possible since it is only WCF code
@@ -248,14 +248,14 @@ class CategoryRepositoryFunctionalTest extends WebTestCase
 		$category->setCategorySlug('test');
 		$category->setCategoryDescription('testDescription');
 		$this->em->persist($category);
-		$this->em->flush();
+		$this->em->flush($category);
 		$this->em->refresh($category);
 		
 		$layout = new LayoutEntity();
 		$layout->setObjectID($category->getId());
 		$layout->setObjectType('category');
 		$this->em->persist($layout);
-		$this->em->flush();
+		$this->em->flush($layout);
 		$this->em->refresh($layout);
 		
 		// reset WCF cache, possible since it is only WCF code
@@ -284,9 +284,9 @@ class CategoryRepositoryFunctionalTest extends WebTestCase
 	 */
 	protected function tearDown()
 	{
-		$sql = 'DELETE FROM '.$this->databaseTable.' WHERE categoryID > 1';
+		$sql = 'DELETE FROM `'.$this->databaseTable.'` WHERE categoryID > 1';
 		$this->em->getConnection()->executeQuery($sql);
-		$sql = 'DELETE FROM ultimate1_layout WHERE layoutID > 5';
+		$sql = 'DELETE FROM `ultimate1_layout` WHERE layoutID > 5';
 		$this->em->getConnection()->executeQuery($sql);
 		$sql = 'ALTER TABLE `'.$this->databaseTable.'` AUTO_INCREMENT = 2';
 		$this->em->getConnection()->executeQuery($sql);
