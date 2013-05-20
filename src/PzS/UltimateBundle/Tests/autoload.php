@@ -16,3 +16,4 @@ $_SERVER['SERVER_SOFTWARE'] = 'Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/0.9.
 $_SERVER['DOCUMENT_ROOT'] = 'E:/Users/Development/AppData/Local/ApacheSoftwareFoundation/Apache2.2/htdocs/';
 $_SERVER['REQUEST_URI'] = '/';
 require_once(ULTIMATE_PATH.'global.php');
+if (!defined('TESTING_MODE')) define('TESTING_MODE', 1);
