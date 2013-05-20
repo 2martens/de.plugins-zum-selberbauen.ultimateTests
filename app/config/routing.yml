@@ -1,0 +1,4 @@
+pz_s_ultimate:
+    resource: "@PzSUltimateBundle/Controller/"
+    type:     annotation
+    prefix:   /
